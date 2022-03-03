@@ -21,7 +21,7 @@ connection.once('open',()=>{
 
 
 app.use(cors({
-    origin: 'https://social-media--frontend.herokuapp.com',
+    origin: process.env.FRONTEND,
     credentials: true
 }));
 app.use(express.json());
